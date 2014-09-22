@@ -4,6 +4,43 @@
 
 ========================================================================== */
 
-.content-article{
+.lp-wrapper{
+	margin: 0 auto;
+	max-width: 960px;
+	width: 96%;
+}
+
+.content-article, .terminologie{
 	padding: 0 4.6em;
+
+	@media only screen and(max-width: 870px){
+		padding: 0 2em;
+	}
+}
+
+.anchor-nav{
+	float: left;
+	height: 35px;
+	width: 100%;
+
+	ul, li{
+		float: left;
+	}
+
+	ul{
+		width: 100%;
+	}
+
+	li{
+		list-style-type: none;
+		text-align: center;
+		width: 50%;
+	}
+}
+
+.nav-link{
+	display: block;
+	height: 35px;
+	line-height: 35px;
+	width: 100%;
 }

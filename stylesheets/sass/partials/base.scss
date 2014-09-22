@@ -14,7 +14,7 @@
 $basefont: 15px;
 $baseline: 1.33; 				// 20px
 $textColor: #A1A1A1; 			// Gray
-$headingColor: #55A6B9; 		// Turqoois
+$accentColor: #55A6B9; 		// Turqoois
 $exploreMore: #96B9B2;			// Explore More
 
 /* =====================
@@ -28,6 +28,10 @@ html {
   font-size: $basefont;
   line-height: $baseline;
   text-align: center;
+
+  @media only screen and(max-width: 540px ){
+	font-size: 0.8em;
+  }
 }
 
 *, *:before, *:after {
@@ -35,12 +39,16 @@ html {
 }
 
 h1, h2, h3, h4, h5, h6{
-	color: $headingColor;
+	color: $accentColor;
 	font-weight: 100;
 }
 
 h1{
 	font-size: 3em;
+
+	@media only screen and (max-width: 870px){
+		font-size: 2em;
+	}
 }
 
 h2{
@@ -52,9 +60,37 @@ h3{
 }
 
 p{
-	width: 100%;
+	margin: 0 auto 2em;
+	width: 96%;
+}
+
+img{
+	max-width: 100%;
 }
 
 ul{
+	color: $accentColor;
+	font-weight: 700;
 	text-align: left;
+}
+
+table{
+	text-align: left;
+	width: 100%;
+
+	tr{
+		height: 2em;
+	}
+}
+
+/* =====================
+	HACKS
+===================== */
+
+.clearfix{
+	&:after{
+		clear: both;
+		content: "";
+		display: table;
+	}
 }

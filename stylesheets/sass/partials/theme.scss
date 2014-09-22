@@ -4,7 +4,92 @@
 
 ========================================================================== */
 
+/* =====================
+	TEXT
+===================== */
+.normal-text{
+	color: $textColor;
+	font-weight: 100;
+}
+
 .explore-more{
 	color: $exploreMore;
 	font-weight: 700;
+}
+
+.bold{
+	font-weight: 700;
+}
+
+/* =====================
+	HEADER
+===================== */
+.header-img{
+	float: left; // makes the container collapse on the image
+	
+	// SHADOW TOP
+	&:before{
+		background: url(../../images/top_shadow.png) no-repeat bottom center;
+		content: "";
+		display: block;
+		height: 21px;
+		width: 100%;
+	}
+	
+	// SHADOW BOTTOM
+	&:after{
+		background: url(../../images/bottom_shadow.png) no-repeat top center;
+		content: "";
+		height: 21px;
+		width: 100%;
+	}
+}
+
+.nav-list{
+	margin-top: 0;
+	padding-bottom: 15px;
+}
+
+.nav-link{
+	color: $accentColor;
+	text-decoration: none;
+}
+
+.border-right{
+	border-right: 1px solid #DCDCDC;
+}
+
+/* =====================
+	TABLE
+===================== */
+
+// TABLE COLS
+
+thead{
+	color: $accentColor;
+	font-weight: 700;
+
+	span{
+		position: relative;
+		top: -8px;
+	}
+}
+
+td{
+	padding-left: 1.6em;
+	width: percentage(240/960);
+
+	@media only screen and(max-width: 540px){
+		padding-left: .5em;
+	}
+}
+
+// TABLE ROWS
+.gray{
+	background: #F6F6F6;
+	border-top: 1px solid #D2D2D2;
+}
+
+.border-bottom{
+	border-bottom: 1px solid #A0A0A0;
 }
