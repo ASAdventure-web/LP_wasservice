@@ -306,8 +306,7 @@ input {
  */
 input[type="checkbox"],
 input[type="radio"] {
-  -moz-box-sizing: border-box;
-       box-sizing: border-box;
+  box-sizing: border-box;
   /* 1 */
   padding: 0;
   /* 2 */ }
@@ -330,6 +329,7 @@ input[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
   -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
   /* 2 */
   box-sizing: content-box; }
 
@@ -388,19 +388,50 @@ td,
 th {
   padding: 0; }
 
+/* =====================
+	VARIABLES
+===================== */
+/* =====================
+	DOCUMENT BASE
+===================== */
 html {
-  -moz-box-sizing: border-box;
-       box-sizing: border-box; }
+  box-sizing: border-box;
+  color: #A1A1A1;
+  font-family: "Open Sans";
+  font-size: 15px;
+  line-height: 1.33;
+  text-align: center; }
 
 *, *:before, *:after {
-  -moz-box-sizing: inherit;
-       box-sizing: inherit; }
+  box-sizing: inherit; }
+
+h1, h2, h3, h4, h5, h6 {
+  color: #55A6B9;
+  font-weight: 100; }
+
+h1 {
+  font-size: 3em; }
+
+h2 {
+  font-size: 2.13em; }
+
+h3 {
+  font-size: 1.2em; }
+
+p {
+  width: 100%; }
+
+ul {
+  text-align: left; }
 
 /* ==========================================================================
 
 	LAYOUT
 
 ========================================================================== */
+.content-article {
+  padding: 0 4.6em; }
+
 /* ==========================================================================
 
 	MODULES
@@ -416,3 +447,6 @@ html {
 	THEME
 
 ========================================================================== */
+.explore-more {
+  color: #96B9B2;
+  font-weight: 700; }

@@ -7,11 +7,54 @@
 // NORMALIZE THROUGH BOWER_COMPONENTS
 @import "../../../bower_components/normalize-scss/normalize.scss";
 
-// BORDER BOX 
+/* =====================
+	VARIABLES
+===================== */
+
+$basefont: 15px;
+$baseline: 1.33; 				// 20px
+$textColor: #A1A1A1; 			// Gray
+$headingColor: #55A6B9; 		// Turqoois
+$exploreMore: #96B9B2;			// Explore More
+
+/* =====================
+	DOCUMENT BASE
+===================== */
+
 html {
-  box-sizing: border-box;
-}
-*, *:before, *:after {
-  box-sizing: inherit;
+  box-sizing: border-box; 		// BOX-MODEL
+  color: $textColor;
+  font-family: "Open Sans";
+  font-size: $basefont;
+  line-height: $baseline;
+  text-align: center;
 }
 
+*, *:before, *:after {
+  box-sizing: inherit;			// BOX-MODEL FOR EXTERNAL COMPONENTS
+}
+
+h1, h2, h3, h4, h5, h6{
+	color: $headingColor;
+	font-weight: 100;
+}
+
+h1{
+	font-size: 3em;
+}
+
+h2{
+	font-size: 2.13em;
+}
+
+h3{
+	font-size: 1.2em;
+}
+
+p{
+	width: 100%;
+}
+
+ul{
+	text-align: left;
+}
