@@ -51,6 +51,50 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/images\/bottom_shadow.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1766,
+		"inputAbbreviatedPath": "\/images\/bottom_shadow.png",
+		"outputAbbreviatedPath": "\/images\/bottom_shadow.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
+	"\/images\/explore_more_exclusief.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1587,
+		"inputAbbreviatedPath": "\/images\/explore_more_exclusief.jpg",
+		"outputAbbreviatedPath": "\/images\/explore_more_exclusief.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
+	"\/images\/header_img.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 140569,
+		"inputAbbreviatedPath": "\/images\/header_img.jpg",
+		"outputAbbreviatedPath": "\/images\/header_img.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
+	"\/images\/top_shadow.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1603,
+		"inputAbbreviatedPath": "\/images\/top_shadow.png",
+		"outputAbbreviatedPath": "\/images\/top_shadow.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
 	"\/index.html": {
 		"fileType": 8192,
 		"ignore": 0,

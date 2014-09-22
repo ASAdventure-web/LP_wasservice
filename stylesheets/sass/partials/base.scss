@@ -21,76 +21,109 @@ $exploreMore: #96B9B2;			// Explore More
 	DOCUMENT BASE
 ===================== */
 
-html {
+#lp-wrapper{
   box-sizing: border-box; 		// BOX-MODEL
   color: $textColor;
   font-family: "Open Sans";
   font-size: $basefont;
   line-height: $baseline;
+  margin-bottom: 5em;
   text-align: center;
 
-  @media only screen and(max-width: 540px ){
-	font-size: 0.8em;
+  @media only screen and(max-width: 979px ){
+		font-size: 0.9em;
   }
-}
 
-*, *:before, *:after {
-  box-sizing: inherit;			// BOX-MODEL FOR EXTERNAL COMPONENTS
-}
+  @media only screen and(max-width: 768px ){
+		font-size: 0.8em;
+  }
 
-h1, h2, h3, h4, h5, h6{
-	color: $accentColor;
-	font-weight: 100;
-}
 
-h1{
-	font-size: 3em;
 
-	@media only screen and (max-width: 870px){
-		font-size: 2em;
+	*, *:before, *:after {
+	  box-sizing: inherit;			// BOX-MODEL FOR EXTERNAL COMPONENTS
 	}
-}
 
-h2{
-	font-size: 2.13em;
-}
-
-h3{
-	font-size: 1.2em;
-}
-
-p{
-	margin: 0 auto 2em;
-	width: 96%;
-}
-
-img{
-	max-width: 100%;
-}
-
-ul{
-	color: $accentColor;
-	font-weight: 700;
-	text-align: left;
-}
-
-table{
-	text-align: left;
-	width: 100%;
-
-	tr{
-		height: 2em;
+	section{
+		margin-bottom: 5em;
 	}
-}
+
+	h1, h2, h3, h4, h5, h6{
+		color: $accentColor;
+		font-weight: 100;
+	}
+
+	h1{
+		font-size: 3em;
+
+		@media only screen and (max-width: 870px){
+			font-size: 2em;
+		}
+	}
+
+	h2{
+		font-size: 2.13em;
+		margin-top: 2em;
+
+		@media only screen and (max-width: 870px){
+			font-size: 1.5em;
+		}
+	}
+
+	h3{
+		font-size: 1.2em;
+	}
+
+	p{
+		font-weight: 100;
+		margin: 0 auto 2em;
+		width: 96%;
+		font-size: 100%;
+	}
+
+	a{
+		font-size: 100%;
+
+		&:hover{
+			color: darken($accentColor, 10%);
+		}
+	}
+
+	img{
+		max-width: 100%;
+	}
+
+	ul{
+		color: $accentColor;
+		font-weight: 700;
+		margin-left: 0;
+		text-align: left;
+	}
+
+	table{
+		text-align: left;
+		width: 100%;
+
+		tr{
+			height: 2em;
+		}
+
+		@media only screen and(max-width: 768px){
+			overflow-x: scroll; 
+		}
+	}
 
 /* =====================
 	HACKS
 ===================== */
 
-.clearfix{
-	&:after{
-		clear: both;
-		content: "";
-		display: table;
+	.clearfix{
+		&:after{
+			clear: both;
+			content: "";
+			display: table;
+			height: 21px;
+			visibility: inherit;
+		}
 	}
 }

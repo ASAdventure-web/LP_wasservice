@@ -394,61 +394,73 @@ th {
 /* =====================
 	DOCUMENT BASE
 ===================== */
-html {
+#lp-wrapper {
   box-sizing: border-box;
   color: #A1A1A1;
-  font-family: "Open Sans", "Helvetica Neue", arial, sans-serif;
+  font-family: "Open Sans";
   font-size: 15px;
   line-height: 1.33;
-  text-align: center; }
-  @media only screen and (max-width: 540px) {
-    html {
+  margin-bottom: 5em;
+  text-align: center;
+  /* =====================
+  	HACKS
+  ===================== */ }
+  @media only screen and (max-width: 979px) {
+    #lp-wrapper {
+      font-size: 0.9em; } }
+  @media only screen and (max-width: 768px) {
+    #lp-wrapper {
       font-size: 0.8em; } }
-
-*, *:before, *:after {
-  box-sizing: inherit; }
-
-h1, h2, h3, h4, h5, h6 {
-  color: #55A6B9;
-  font-weight: 100; }
-
-h1 {
-  font-size: 3em; }
-  @media only screen and (max-width: 870px) {
-    h1 {
-      font-size: 2em; } }
-
-h2 {
-  font-size: 2.13em; }
-
-h3 {
-  font-size: 1.2em; }
-
-p {
-  margin: 0 auto 2em;
-  width: 96%; }
-
-img {
-  max-width: 100%; }
-
-ul {
-  color: #55A6B9;
-  font-weight: 700;
-  text-align: left; }
-
-table {
-  text-align: left;
-  width: 100%; }
-  table tr {
-    height: 2em; }
-
-/* =====================
-	HACKS
-===================== */
-.clearfix:after {
-  clear: both;
-  content: "";
-  display: table; }
+  #lp-wrapper *, #lp-wrapper *:before, #lp-wrapper *:after {
+    box-sizing: inherit; }
+  #lp-wrapper section {
+    margin-bottom: 5em; }
+  #lp-wrapper h1, #lp-wrapper h2, #lp-wrapper h3, #lp-wrapper h4, #lp-wrapper h5, #lp-wrapper h6 {
+    color: #55A6B9;
+    font-weight: 100; }
+  #lp-wrapper h1 {
+    font-size: 3em; }
+    @media only screen and (max-width: 870px) {
+      #lp-wrapper h1 {
+        font-size: 2em; } }
+  #lp-wrapper h2 {
+    font-size: 2.13em;
+    margin-top: 2em; }
+    @media only screen and (max-width: 870px) {
+      #lp-wrapper h2 {
+        font-size: 1.5em; } }
+  #lp-wrapper h3 {
+    font-size: 1.2em; }
+  #lp-wrapper p {
+    font-weight: 100;
+    margin: 0 auto 2em;
+    width: 96%;
+    font-size: 100%; }
+  #lp-wrapper a {
+    font-size: 100%; }
+    #lp-wrapper a:hover {
+      color: #408a9b; }
+  #lp-wrapper img {
+    max-width: 100%; }
+  #lp-wrapper ul {
+    color: #55A6B9;
+    font-weight: 700;
+    margin-left: 0;
+    text-align: left; }
+  #lp-wrapper table {
+    text-align: left;
+    width: 100%; }
+    #lp-wrapper table tr {
+      height: 2em; }
+    @media only screen and (max-width: 768px) {
+      #lp-wrapper table {
+        overflow-x: scroll; } }
+  #lp-wrapper .clearfix:after {
+    clear: both;
+    content: "";
+    display: table;
+    height: 21px;
+    visibility: inherit; }
 
 /* ==========================================================================
 
@@ -484,6 +496,9 @@ table {
   height: 35px;
   line-height: 35px;
   width: 100%; }
+  @media only screen and (max-width: 767px) {
+    .nav-link {
+      height: 70px; } }
 
 /* ==========================================================================
 
@@ -508,7 +523,7 @@ table {
   font-weight: 100; }
 
 .explore-more {
-  color: #96B9B2;
+  color: #96B9B2 !important;
   font-weight: 700; }
 
 .bold {
@@ -548,9 +563,8 @@ table {
 thead {
   color: #55A6B9;
   font-weight: 700; }
-  thead span {
-    position: relative;
-    top: -8px; }
+  thead td {
+    height: 36px; }
 
 td {
   padding-left: 1.6em;
