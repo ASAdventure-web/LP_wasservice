@@ -472,6 +472,12 @@ th {
   max-width: 960px;
   width: 96%; }
 
+.anchor {
+  width: 10px;
+  height: 0;
+  position: relative;
+  top: -157px; }
+
 .content-article, .terminologie {
   padding: 0 4.6em; }
   @media only screen and (max-width: 870px) {
