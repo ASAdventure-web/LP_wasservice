@@ -497,13 +497,13 @@ th {
     text-align: center;
     width: 50%; }
 
-.nav-link {
+.lp-wrapper .nav-link {
   display: block;
   height: 35px;
   line-height: 35px;
   width: 100%; }
   @media only screen and (max-width: 767px) {
-    .nav-link {
+    .lp-wrapper .nav-link {
       height: 70px; } }
 
 /* ==========================================================================
